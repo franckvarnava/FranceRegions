@@ -1,0 +1,143 @@
+/* FICHIER CSS */
+
+html {
+	height: 100vh;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	font-size: 1em;
+	font-family: fantasy;
+	background-color: cyan;
+}
+
+.header div {
+	float: left;
+	height: 10vh;
+	width: 100vw;
+	color: white;
+	font-size: 3vw;
+	line-height: 10vh;
+	text-align: center;
+	font-family: monospace;
+	background-color: darkkhaki;
+}
+
+/* la police de type "monospace" permet de garder une "chasse" fixe = une largeur de caractère invariable,
+ce qui nous est utile pour afficher l'heure actualisée toutes les secondes sans l'impression de décalage du texte... */
+
+#headerLeft {
+	width: 20%;
+	font-size: 2vw;
+	line-height: 5vh;
+	background: linear-gradient(180deg, blue, red);
+}
+
+img {
+	width: 20%;
+}
+
+#headerCenter {
+	width: 60%;
+	color: gray;
+	background-color: white;
+}
+
+#headerCenter:hover {
+	color: white;
+	background: linear-gradient(45deg, blue, red);
+}
+
+#headerRight {
+	width: 20%;
+	font-size: 1em;
+	background: linear-gradient(0deg, blue, red);
+}
+
+.header {
+	height: 10vh;
+	color: white;
+	font-size: 1.5em;
+	line-height: 10vh;
+	text-align: center;
+	background-color: darkkhaki;
+}
+
+.header {
+	height: 10vh;
+	color: white;
+	font-size: 1.5em;
+	line-height: 10vh;
+	text-align: center;
+	background-color: darkkhaki;
+}
+
+.mainleft {
+	float: left;
+	width: 49%;
+	height: 80vh;
+	text-align: center;
+	background-color: blanchedalmond;
+	border-right: solid 5px black;
+}
+
+.formulaire {
+	margin-top: 5%;
+}
+
+.mainright {
+	float: left;
+	width: 50%;
+	height: 80vh;
+	text-align: center;
+	background-color: cyan;
+}
+
+#recaplabel {
+	margin-top: 5%;
+}
+
+.footer {
+	clear: both;
+	height: 10vh;
+	color: white;
+	font-size: 1em;
+	line-height: 10vh;
+	text-align: center;
+	background-color: black;
+}
+
+@media screen and (max-width: 1024px) {
+	body {
+		font-size: 2em;
+		font-family: verdana;
+	}
+	#headerCenter {
+		line-height: 5vh;
+	}
+	.mainleft {
+		width: 100%;
+		height: 40vh;
+		background-color: lightyellow;
+		border-right: none;
+	}
+	.mainright {
+		width: 100%;
+		height: 40vh;
+		color: white;
+		background-color: purple;
+	}
+}
+
+#mapid {
+	float: left;
+	width: 500px;
+	height: 300px;
+	margin-left: 10%;
+}
+
+#mapidChild {
+	width: 500px;
+	height: 300px;
+}

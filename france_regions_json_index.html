@@ -1,0 +1,43 @@
+<!-- FICHIER HTML -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- En-tête de la page -->
+    <meta charset="utf-8" />
+    <title>Mes régions</title>
+    <link rel="stylesheet" type="text/css" href="france_regions_style.css">
+    <script type="text/javascript" src="france_regions_json_JS.js" defer></script>
+    <script src="france_regions_json_TAB__regions.js"></script>
+    <script src="france_regions_json_TAB_dept_HDF.js"></script>
+    <script src="france_regions_json_TAB_dept_IDF.js"></script>
+    <script src="france_regions_json_TAB_dept_IDF_com_VDO.js"></script>
+</head>
+<body>
+    <!-- Corps de la page -->
+    <!-- Header = en-tête visible de la page -->
+    <div class="header">
+        <div id="headerLeft"></div>
+        <div id="headerCenter">Les régions de France</div>
+        <div id="headerRight"></div>
+    </div>
+    <!-- Main = fenêtre principale -->
+    <div class="mainleft">
+        <div class="formulaire">
+            <form id="formul">
+                <input id="bouton" type="button" value="Afficher liste régions" onclick="populerListeRegions();" />
+                <p></p>
+            </form>
+        </div>
+    </div>
+    <div class="mainright">
+        <div id="recaplabel">Commune sélectionnée :</div>
+        <br />
+        <div id="recapCommune">Aucune pour le moment...</div>
+        <br />
+        <div id="recapCodePostal"></div>
+    </div>
+    <!-- Footer = pied-de-page -->
+    <div class="footer">Et les départements, et les communes...</div>
+</body>
+</html>
